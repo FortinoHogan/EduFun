@@ -16,7 +16,7 @@ class CategoryController extends Controller
             abort(404);
         }
         $posts = Post::where('category_id', $categoryId)->get();
-        return view('pages.category-page.category')->with(['posts' => $posts, 'category' => $category]);
+        return view('pages.category-page.category')->with(['posts' => $posts, 'category' => $category, 'active' => 'category']);
 
     }
 }

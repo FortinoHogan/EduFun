@@ -5,10 +5,10 @@
         </a>
         <ul class="navbar-nav flex-row gap-5">
             <li class="nav-item">
-                <a class="nav-link" href={{ route('home') }}>Home</a>
+                <a class="nav-link {{ $active === 'home' ? 'text-primary text-decoration-underline' : '' }}" href={{ route('home') }}>Home</a>
             </li>
             <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-bs-toggle="dropdown"
+                <a class="nav-link dropdown-toggle {{ $active === 'category' ? 'text-primary text-decoration-underline' : '' }}" href="#" id="navbarDropdownMenuLink" data-bs-toggle="dropdown"
                     aria-haspopup="true" aria-expanded="false">
                     Category
                 </a>
@@ -18,13 +18,13 @@
                 </div>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href={{ route('writers') }}>Writers</a>
+                <a class="nav-link {{ $active === 'writer' ? 'text-primary text-decoration-underline' : '' }}" href={{ route('writers') }}>Writers</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href={{ route('about') }}>About Us</a>
+                <a class="nav-link {{ $active === 'about' ? 'text-primary text-decoration-underline' : '' }}" href={{ route('about') }}>About Us</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href={{ route('popular') }}>Popular</a>
+                <a class="nav-link {{ $active === 'popular' ? 'text-primary text-decoration-underline' : '' }}" href={{ route('popular') }}>Popular</a>
             </li>
         </ul>
     </div>

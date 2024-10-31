@@ -3,7 +3,7 @@
 @section('content')
     <div class="mb-5">
         <img src={{ asset('storage/img/hero.png') }} alt=""
-            style="width: 100vw; height: 75vh; object-fit: cover">
+            style="width: 100%; height: 75vh; object-fit: cover">
     </div>
     <div class="container">
         @foreach ($posts as $post)

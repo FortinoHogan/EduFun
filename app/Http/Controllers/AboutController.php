@@ -8,6 +8,6 @@ use Illuminate\Http\Request;
 class AboutController extends Controller
 {
     public function index(){
-        return view('pages.about-us-page.about-us');
+        return view('pages.about-us-page.about-us')->with(['active' => 'about']);
     }
 }
