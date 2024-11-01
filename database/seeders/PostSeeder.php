@@ -34,7 +34,6 @@ class PostSeeder extends Seeder
 
             Post::create([
                 'writer_id' => $writer->id,
-                'category_id' => 1,
                 'title' => $titles[$i],
                 'img-path' => 'storage/img/post-' . ($i + 1) . '.jpg',
                 'content' => $faker->paragraph(30),
@@ -46,7 +45,6 @@ class PostSeeder extends Seeder
 
             Post::create([
                 'writer_id' => $writer->id,
-                'category_id' => 2,
                 'title' => $titles[$i],
                 'img-path' => 'storage/img/post-' . ($i + 1) . '.jpg',
                 'content' => $faker->paragraph(30),
