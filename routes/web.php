@@ -11,11 +11,11 @@ Route::get('/', [HomeController::class, 'index'])->name('home');
 
 Route::get('/about-us', [AboutController::class, 'index'])->name('about');
 
-Route::get('/category/{category}', [CategoryController::class, 'index'])->name('category');
+Route::get('/category/{categoryId}', [CategoryController::class, 'index'])->name('category');
 
 Route::get('/writers', [WriterController::class, 'index'])->name('writers');
-Route::get('/writer/{writer}', [WriterController::class, 'viewWriter'])->name('writer');
+Route::get('/writer/{writerId}', [WriterController::class, 'viewWriter'])->name('writer');
 
-Route::get('/detail/{post}', [PostController::class, 'index'])->name('detail');
+Route::get('/detail/{postId}', [PostController::class, 'index'])->name('detail');
 
 Route::get('/popular', [PostController::class, 'viewAll'])->name('popular');

@@ -17,9 +17,7 @@ class PostController extends Controller
             abort(404);
         }
 
-        $category = $post->writer->category;
-
-        return view('pages.detail-page.detail-page')->with(['post' => $post, 'writer' => $post->writer, 'category' => $category, 'active' => 'category']);
+        return view('pages.detail-page.detail-page')->with(['post' => $post, 'active' => 'category']);
     }
 
     public function viewAll()
